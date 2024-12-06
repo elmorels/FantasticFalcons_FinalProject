@@ -8,7 +8,8 @@
 # Brief Description: This makes a table with 2 rows and 2 columns to be able to put the problems and solutions in
 # Citations: Stacked overflow,InClass_2024_11_19_IS3050_001
 -->
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Falcons_FinalProject.index" %>
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="FantasticFalcons_FinalProject.index" %>
 
 <!DOCTYPE html>
 
@@ -35,15 +36,23 @@
                 </tr>
                 <tr>
                     <td>
+                        <asp:Label ID="lblDescription" runat="server" Text="Description"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="lblShowDescription" runat="server" Text=" "></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <asp:Label ID="lblSolution" runat="server" Text="Solution"></asp:Label>
                     </td>
                     <td>
                         <asp:Label ID="lblShowSolution" runat="server" Text=" "></asp:Label>
                     </td>
                 </tr>
-               </table>
-            
-            
+            </table>
+
+
         </div>
     </form>
 </body>
